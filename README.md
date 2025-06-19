@@ -1,4 +1,4 @@
-# 📘 README.md — Angular Multi-App Workspace (Non-Standalone)
+# 📘Angular Multi-App Workspace (Non-Standalone)
 ### Angular Multi-Application Workspace (Without Standalone APIs)
 
  This project is a custom Angular workspace designed to host multiple traditional Angular applications using the NgModules architecture (i.e., **not using Angular Standalone APIs**). It also uses a custom folder structure (`myproject/`) instead of the default `projects/`.
