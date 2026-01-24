@@ -1,0 +1,20 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Angular
+dist/
+.angular/
+.cache/
+
+# Environment files
+.env
+.env.local
+
+# OS files
+.DS_Store
+
+# Editor
+.vscode/
