@@ -1,59 +1,86 @@
-# Test
+# Angular Repository
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.0.
+This branch contains an Angular application built with Angular CLI version 21.1.0.
 
-## Development server
+## Branch Purpose
 
-To start a local development server, run:
+This branch focuses on the `Functions` feature under `src/Features/Functions/functions/`. It demonstrates TypeScript function concepts in an Angular component, including:
 
-```bash
-ng serve
-```
+- typed function definitions
+- optional and default parameters
+- function expressions and arrow functions
+- rest parameters
+- function overloading
+- function types and interfaces
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Project Structure
 
-## Code scaffolding
+Key folders and files:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- `src/app/` - core application entry point and routing
+- `src/Features/Functions/functions/` - `Functions` component demonstrating TypeScript function examples
+- `src/styles.scss` - global styles
+- `public/` - application assets
+- `angular.json` - Angular build and serve configuration
+- `package.json` - project dependencies and scripts
 
-```bash
-ng generate component component-name
-```
+## Getting Started
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+Install dependencies:
 
 ```bash
-ng build
+npm install
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Serve the app locally:
 
 ```bash
-ng test
+npm start
 ```
 
-## Running end-to-end tests
+Open the browser at:
 
-For end-to-end (e2e) testing, run:
+```text
+http://localhost:4200/
+```
+
+The application will reload automatically when source files change.
+
+## Development
+
+Generate new components or features with the Angular CLI:
 
 ```bash
-ng e2e
+npm run ng generate component component-name
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Build the project:
 
-## Additional Resources
+```bash
+npm run build
+```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Run unit tests:
+
+```bash
+npm test
+```
+
+## Notes
+
+- The branch uses `@angular/core` and related Angular packages at `^21.1.0`.
+- `typescript` is pinned to `~5.9.2`.
+- `vitest` is configured for unit testing.
+
+## Useful Commands
+
+- `npm install` - install dependencies
+- `npm start` - run development server
+- `npm run build` - build production assets
+- `npm test` - run unit tests
+
+## References
+
+- Angular CLI: https://angular.dev/cli
+- TypeScript: https://www.typescriptlang.org/
+- Vitest: https://vitest.dev/
