@@ -1,0 +1,9 @@
+@mixin button-styles ($bg-color,$color){
+    background-color: $bg-color;
+    color: $color;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+@mixin no-border{
+    border:none;
+}
