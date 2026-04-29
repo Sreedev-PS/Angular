@@ -1,0 +1,13 @@
+<p>dashboard works!</p>
+<app-dashboard-table 
+[data]="[{id:1,name:'John',email:'john@example.com',role:'Admin',status:'Active'},{id:2,name:'Jane',email:'jane@example.com',role:'User',status:'Active'},{id:3,name:'Bob',email:'bob@example.com',role:'User',status:'Inactive'},{id:4,name:'Alice',email:'alice@example.com',role:'Admin',status:'Active'}]"
+(rowClicked)="rowClickedEvent($event)"
+> </app-dashboard-table>
+
+<div *ngIf="selectedRow" class="selected-row-details">
+  <h3>Selected Row Details:</h3>
+  <p><strong>ID:</strong> {{ selectedRow?.id }}</p>
+  <p><strong>Name:</strong> {{ selectedRow?.name }}</p>
+  <p><strong>Email:</strong> {{ selectedRow?.email }}</p>
+  <p><strong>Role:</strong> {{ selectedRow?.role }}</p>
+  <p><strong>Status:</strong> {{ selectedRow?.status }}</p>

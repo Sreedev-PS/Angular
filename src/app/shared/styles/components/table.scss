@@ -1,0 +1,11 @@
+@use './../mixins/table-mixins.scss' as *;
+
+table{
+    @include table-border;
+    border-collapse: collapse;
+    width: 100%;
+    td{
+        padding: 8px;
+    }
+    @include table-row-hover;
+}

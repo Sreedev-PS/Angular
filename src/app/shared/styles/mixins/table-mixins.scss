@@ -1,0 +1,18 @@
+@mixin table-border($color:#000){
+    border: 1px solid $color;
+    tr{
+        td{
+            border: 1px solid $color;
+        }
+        th{
+            border: 1px solid $color;
+            background-color: rgb(78, 142, 225);
+        }
+    }
+}
+
+@mixin table-row-hover($color: rgb(78, 142, 225)){
+    tr:hover{
+        background-color: $color;
+    }
+}

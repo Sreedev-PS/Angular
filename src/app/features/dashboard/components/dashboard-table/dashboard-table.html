@@ -1,0 +1,20 @@
+<h1>dashboard-table</h1>
+
+<table>
+    <thead>
+        <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Role</th>
+        <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of data" (click)="rowClicked.emit(row)">
+        <td>{{ row.name }}</td>
+        <td>{{ row.email }}</td>
+        <td>{{ row.role }}</td>
+        <td>{{ row.status }}</td>
+        </tr>
+    </tbody>
+</table>
