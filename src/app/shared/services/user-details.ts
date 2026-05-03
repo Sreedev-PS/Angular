@@ -14,6 +14,7 @@ export class UserDetailsService {
  }
 
  getUserDetails():Observable<string>{
+    
     return this.userDetails.asObservable()
  }
 }
