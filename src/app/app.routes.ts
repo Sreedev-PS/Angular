@@ -7,6 +7,7 @@ export const routes: Routes = [
         path:'',
         loadComponent: () => import('./features/signal-component/pages/signal-dom-view/signal-dom-view').then(m => m.SignalDomView)
 
+    },
     {
         path:'amazone-dashboard',
         component:DashboardAmazone
@@ -14,5 +15,9 @@ export const routes: Routes = [
     {
         path:'page2',
         component:DashboardFlipkart
+    },
+    {
+        path:'directives',
+        loadChildren:()=> import('./features/structural directives/router/router').then(r=>r.router)
     }
 ];

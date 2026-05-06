@@ -1,0 +1,16 @@
+<p>structural-directive works!</p>
+
+@if (isTest) {
+    <p>Test is true</p>
+}@else{
+    <p>Test is false</p>
+}
+
+    @for (i of [1,2,3,4,5];track i ){
+        <p>{{i}}---element {{i}}</p>
+    }
+
+
+<input type="text" [(ngModel)]="inputValue" placeholder="Enter Value">
+
+<p *appStructuralDirectiveD="inputValue;value:inputValue;let data" >{{data}}</p>
