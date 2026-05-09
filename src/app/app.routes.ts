@@ -19,5 +19,9 @@ export const routes: Routes = [
     {
         path:'directives',
         loadChildren:()=> import('./features/structural directives/router/router').then(r=>r.router)
+    },
+    {
+        path:'attr-directive',
+        loadChildren:()=>import('./features/Attribute directive/router/router').then(r=>r.router)
     }
 ];
