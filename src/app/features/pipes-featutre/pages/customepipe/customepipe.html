@@ -1,0 +1,9 @@
+<p>customepipe works!</p>
+
+<hr><hr><hr>
+
+<input type="text" placeholder="Enter name" [(ngModel)]="name">
+
+<hr><hr><hr>
+
+The entered Name is : {{name | customepipe|slice:0:20}}
