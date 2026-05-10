@@ -23,5 +23,9 @@ export const routes: Routes = [
     {
         path:'attr-directive',
         loadChildren:()=>import('./features/Attribute directive/router/router').then(r=>r.router)
+    },
+    {
+        path:'hLBAD',
+        loadChildren:()=>import('./features/Host-LB-att-dircetive/routers/router').then(r=>r.router)
     }
 ];
