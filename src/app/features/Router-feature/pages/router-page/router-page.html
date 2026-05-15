@@ -1,0 +1,44 @@
+<div>
+    This is the demonstration of routerLink, RouterLinkActive and its property [routerLinkActiveOption]
+    <div class="routerLinkOuter">
+        <nav>
+            <li routerLink="/router" routerLinkActive="activeClass">test (<b>This is the activeLinkActive Example</b>)
+            </li>
+            <li routerLink="/router" routerLinkActive="activeClass" [routerLinkActiveOptions]="{exact:true}">test</li>
+            <li>test</li>
+        </nav>
+    </div>
+</div>
+
+
+<div class="buttonOuter">
+    This is Basically demmonstrate different routes like child route,path parameters,query parameters, navigate etc..
+
+    <div class="outer">
+
+        <div><button (click)="pathFn()">Path Parameter Route</button></div>
+        <div><button (click)="queryhFn()">Query Parameter Route</button></div>
+        <div><button (click)="page1Fn()">ChildRoute page1 Route</button></div>
+        <div><button (click)="Page2Fn()">ChildRoute page2 Route</button></div>
+        <div><button (click)="getFn()">Navigate get Route</button></div>
+        <div><button (click)="observableFn()">Navigate observable Route</button></div>
+
+    </div>
+
+    <hr>
+    <div class="new">
+        This is New Router-outlet section
+        <hr>
+        <router-outlet></router-outlet>
+    </div>
+
+    <hr>
+    @if (getValue() != '0'|| getObserver() != '0') {
+    <div style="background-color: aquamarine; padding: 20px; border-radius: 10px;">
+        @if(getValue() != '0'){{{'this is the parameter get by get method (activatedRouter.snapshot.paramMap.get("id")):' + getValue() }}}
+        @else if(getObserver() != '0'){
+            {{'this is the parameter get by observable method (activatedRouter.snapshot.paramMap.get("id")):' + getObserver() }}
+        }
+    </div>
+    }
+</div>

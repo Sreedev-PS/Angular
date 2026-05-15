@@ -31,5 +31,9 @@ export const routes: Routes = [
     {
         path:'injection-token',
         loadChildren:()=>import('./features/injection_token_service/routers/router').then(r=>r.router)
+    },
+    {
+        path:'router',
+        loadChildren:()=>import('./features/Router-feature/routers/router').then(r=>r.Router)
     }
 ];
