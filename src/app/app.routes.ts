@@ -35,5 +35,9 @@ export const routes: Routes = [
     {
         path:'router',
         loadChildren:()=>import('./features/Router-feature/routers/router').then(r=>r.Router)
+    },
+    {
+        path:'guard',
+        loadChildren:()=>import('./features/guards feature/router/router').then(r=>r.Router)
     }
 ];
