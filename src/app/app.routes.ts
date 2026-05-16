@@ -47,5 +47,9 @@ export const routes: Routes = [
     {
         path:'preload',
         loadChildren:()=>import('./features/preload-feature/routes/router').then(r=>r.router)
+    },
+    {
+        path:'form/template',
+        loadChildren:()=>import('./features/template-form/routers/router').then(r=>r.Router)
     }
 ];
