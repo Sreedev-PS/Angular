@@ -1,0 +1,46 @@
+We implementing template driven form in this component
+
+<div style="padding: 20px;margin: 10px;background-color: antiquewhite; border-radius: 20px;">
+
+
+    <form (ngSubmit)="submitForm(myform)" #myform="ngForm">
+        <div style="margin: 10px; width: 100%;">
+            <label style="width: 800px;margin: 1px;" for="name">Name</label>
+            <input type="text" required name="name" placeholder="Please enter the name" #namectrl="ngModel" [(ngModel)]="name">
+        </div>
+
+        <div style="margin: 10px; width: 100%;">
+            <label style="width: 800px;margin: 1px;" for="password">Password</label>
+            <input type="password" name="password" placeholder="Please enter your password" #passwordctrl="ngModel"
+                [(ngModel)]="password">
+        </div>
+
+
+        <div style="background-color: rgba(0, 0, 0, 0.831); color: white; padding: 10px; margin: 10px; border-radius: 10px;">
+
+            This is the submit button and handled by ngsubmit
+            <hr>
+            <button>Submit</button>
+            <hr>
+            {{isSubmitted?'Form Submitted':'Form Not Submitted'}}
+        </div>
+
+    </form>
+
+    <div style="background-color: aquamarine;padding: 20px;margin: 10px;border-radius: 10px;">
+
+        This is the value of form using ngForm
+        <hr>
+        {{myform.value|json}}
+
+    </div>
+
+    <div style="background-color: rgb(188, 249, 159);padding: 20px;margin: 10px;border-radius: 10px;">
+
+        This is the form name control by using ngModel, in here we checking the control is valid or not
+        <hr>
+        {{namectrl.valid|json}}
+
+    </div>
+
+</div>
