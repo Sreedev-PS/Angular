@@ -3,11 +3,12 @@ import { PreloadAllModules, PreloadingStrategy, provideRouter, withPreloading } 
 
 import { routes } from './app.routes';
 import { providerArray } from './shared/providers/providers';
+import { customPreload } from './shared/services/custom-statergy/customStatergy';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
-    provideRouter(routes,withPreloading(PreloadAllModules)),
+    provideRouter(routes,withPreloading(customPreload)),
     ...providerArray
   ]
 };
