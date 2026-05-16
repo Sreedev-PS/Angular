@@ -1,11 +1,14 @@
 import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/core';
-import { provideRouter } from '@angular/router';
+import { PreloadAllModules, PreloadingStrategy, provideRouter, withPreloading } from '@angular/router';
 
 import { routes } from './app.routes';
+import { providerArray } from './shared/providers/providers';
+import { customPreload } from './shared/services/custom-statergy/customStatergy';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
-    provideRouter(routes)
+    provideRouter(routes,withPreloading(customPreload)),
+    ...providerArray
   ]
 };
