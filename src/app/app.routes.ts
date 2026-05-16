@@ -29,6 +29,10 @@ export const routes: Routes = [
         loadChildren:()=>import('./features/Host-LB-att-dircetive/routers/router').then(r=>r.router)
     },
     {
+        path:'pipes',
+        loadChildren:()=>import('./features/pipes-featutre/router/router').then(r=>r.router)
+    },
+    {
         path:'injection-token',
         loadChildren:()=>import('./features/injection_token_service/routers/router').then(r=>r.router)
     },
