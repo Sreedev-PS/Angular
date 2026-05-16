@@ -39,5 +39,9 @@ export const routes: Routes = [
     {
         path:'guard',
         loadChildren:()=>import('./features/guards feature/router/router').then(r=>r.Router)
+    },
+    {
+        path:'preload',
+        loadChildren:()=>import('./features/preload-feature/routes/router').then(r=>r.router)
     }
 ];
