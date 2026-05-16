@@ -1,0 +1,54 @@
+<div style="background-color: antiquewhite;padding: 20px; border-radius: 10px; margin: 10px;">
+
+    This is the section that demonstrate canActivateFn 
+
+    <div style="margin: 10px;padding: 20px; border-radius: 10px;background-color: white;">
+
+        <div style="margin: 20px;">
+            <button (click)="loggedToggle()">Login</button>
+        </div>
+        <hr>
+        <div style="margin: 20px;">
+            <router-outlet></router-outlet>
+
+        </div>
+    </div>
+
+</div>
+
+
+<div style="background-color: rgb(224, 250, 215);padding: 20px; border-radius: 10px; margin: 10px;">
+
+    This is the section that demonstrate CanActivateChild 
+
+    <div style="margin: 10px;padding: 20px; border-radius: 10px;background-color: white;">
+
+        <div style="margin: 20px;">
+            <button (click)="loggedToggleChild()">Login</button>
+        </div>
+        <hr>
+        <div style="margin: 20px;">
+            <router-outlet></router-outlet>
+
+        </div>
+    </div>
+
+</div>
+
+<div style="background-color: rgb(224, 250, 215);padding: 20px; border-radius: 10px; margin: 10px;">
+
+    This is the section that demonstrate CanDeactivate 
+
+    <div style="margin: 10px;padding: 20px; border-radius: 10px;background-color: white;">
+
+        <div style="margin: 20px;">
+            <button (click)="loggedDeactivate()">Login</button>
+        </div>
+        <hr>
+        <div style="margin: 20px;">
+            <router-outlet></router-outlet>
+
+        </div>
+    </div>
+
+</div>
