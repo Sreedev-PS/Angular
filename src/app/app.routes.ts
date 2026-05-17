@@ -55,5 +55,9 @@ export const routes: Routes = [
     {
         path:'form/reactive',
         loadChildren:()=>import('./features/reactive-from-featute/routers/router').then(r=>r.Router)
+    },
+    {
+        path:'form/dynamic',
+        loadChildren:()=>import('./features/dynamic form/routers/router').then(r=>r.Router)
     }
 ];
