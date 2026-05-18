@@ -59,5 +59,9 @@ export const routes: Routes = [
     {
         path:'form/dynamic',
         loadChildren:()=>import('./features/dynamic form/routers/router').then(r=>r.Router)
+    },
+    {
+        path:'interceptor',
+        loadChildren:()=>import('./features/http-interceptor/routers/router').then(r=>r.router)
     }
 ];
