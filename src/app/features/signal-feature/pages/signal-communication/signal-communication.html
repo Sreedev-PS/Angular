@@ -1,9 +1,12 @@
 <div style="background-color: antiquewhite; margin: 10px; padding: 30px; border-radius: 10px;">
     This is the signal communication page ... please check the code base
 
+    <hr>
+    this is the child data <span style="background-color: red;color: white; padding: 0px 5px;"> {{message}}</span>
+
 <hr><hr><hr>
 
 
-<app-child-component [title]="'This is the Title we passed to child from parent'" [age]="20"></app-child-component>
+<app-child-component (childMessage)="getMessage($event)" [title]="'This is the Title we passed to child from parent'" [age]="20"></app-child-component>
 </div>
 
