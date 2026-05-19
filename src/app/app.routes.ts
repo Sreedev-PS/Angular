@@ -67,5 +67,9 @@ export const routes: Routes = [
     {
         path:'signal/communication',
         loadChildren:()=>import('./features/signal-feature/routers/router').then(r=>r.router)
+    },
+    {
+        path:'signal/model',
+        loadChildren:()=>import('./features/signal-model-communication/routers/router').then(r=>r.router)
     }
 ];

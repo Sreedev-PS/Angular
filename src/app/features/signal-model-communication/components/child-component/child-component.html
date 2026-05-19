@@ -1,0 +1,16 @@
+This is my Child Component 
+
+<hr><hr><hr>
+
+Click Send Button To observe the data communication with parent component and the send value will display in parent content area
+
+<hr>
+This is the signal value : {{ childData() }}
+<hr>
+Also U can provide input from child component also 
+<div style="margin: 20px ;">
+    <hr>
+    <input type="text" [(ngModel)]="childData">
+</div>
+<hr>
+<button style="padding: 5px; border-radius: 10px;"  (click)="sendValue()">Send</button>

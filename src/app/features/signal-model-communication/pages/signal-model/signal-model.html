@@ -1,0 +1,24 @@
+<div style="background-color: antiquewhite;padding: 20px;margin: 10px;border-radius: 10px;">
+
+    This is My Parent Component and in here we showing child signal value through model() 
+
+    <hr>
+
+    This is the child model_signal value : <span style="background-color: rgba(255, 0, 0, 0.492); color: white;padding: 0px 5px;">{{childValue()}}</span>
+
+<hr>
+    Also from parent you can input ur value
+
+    <input type="text" [(ngModel)]="childValue">
+
+
+    <div style="background-color: black;color: white;padding: 20px;margin: 10px;border-radius: 10px;">
+
+        <app-child-component [(childData)]="childValue"></app-child-component>
+
+    </div>
+
+
+
+
+</div>
