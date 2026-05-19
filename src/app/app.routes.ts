@@ -63,5 +63,9 @@ export const routes: Routes = [
     {
         path:'interceptor',
         loadChildren:()=>import('./features/http-interceptor/routers/router').then(r=>r.router)
+    },
+    {
+        path:'signal/communication',
+        loadChildren:()=>import('./features/signal-feature/routers/router').then(r=>r.router)
     }
 ];
