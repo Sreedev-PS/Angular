@@ -1,4 +1,4 @@
-import { Component, computed, input } from '@angular/core';
+import { Component, computed, input, output } from '@angular/core';
 
 @Component({
   selector: 'app-child-component',
@@ -16,5 +16,11 @@ export class ChildComponent {
   combine = computed(()=>{
     return this.title()+ ' ----- ' + this.age()
   })
+  childMessage = output<string>()
+
+
+  eventEmit(){
+    this.childMessage.emit('Thanks For Checking the code base')
+  }
 
 }

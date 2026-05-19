@@ -8,5 +8,9 @@ import { ChildComponent } from '../../components/child-component/child-component
   styleUrl: './signal-communication.scss',
 })
 export class SignalCommunication {
+  message:string = ''
 
+  getMessage(event:string){
+    this.message = event
+  }
 }
