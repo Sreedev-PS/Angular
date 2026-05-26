@@ -1,0 +1,16 @@
+<div style="background-color: antiquewhite;padding: 10px;margin: 10px;border-radius: 10px;">
+    <h1>This is the parent component and from this component we calling attaching component dynamically on button click.
+    </h1>
+    <hr>
+    we can also pass input data as title of the component and also providing a button in the attaching component for get
+    the greeting from that component
+    <hr>
+
+    <h5>Parent Component</h5>
+    Input Title :- <input type="text" placeholder="Please enter the title for the component" [(ngModel)]="title">
+    <div style="margin-top: 10px;">
+        <button (click)="onClick()">Create Component</button>
+    </div> 
+    <hr>
+    <ng-container #container></ng-container>
+</div>

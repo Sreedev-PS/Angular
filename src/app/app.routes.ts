@@ -83,6 +83,10 @@ export const routes: Routes = [
     {
         path:'project-depth',
         loadChildren:()=>import('./features/content-Projection-deep/router/router').then(r=>r.router)
+    },
+    {
+        path:'dynamic-component',
+        loadChildren:()=>import('./features/dynamic-components/routers/router').then(r=>r.Router)
     }
 
 ];
