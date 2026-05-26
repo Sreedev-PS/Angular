@@ -13,4 +13,8 @@
     </div> 
     <hr>
     <ng-container #container></ng-container>
+    @if(greeting()){
+    <hr>
+    <h4>Greeting from the component :- {{ greeting() }}</h4>
+    }
 </div>
