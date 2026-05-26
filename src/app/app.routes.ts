@@ -5,8 +5,15 @@ import { DashboardFlipkart } from './features/dashboard_2/pages/dashboard-flipka
 export const routes: Routes = [
     {
         path:'',
+        loadComponent: () => import('./features/dashboard/pages/dashboard/dashboard').then(m => m.DashboardPage)
+    },
+    {
+        path:'dashboard',
+        loadComponent: () => import('./features/dashboard/pages/dashboard/dashboard').then(m => m.DashboardPage)
+    },
+    {
+        path:'signal-dom-view',
         loadComponent: () => import('./features/signal-component/pages/signal-dom-view/signal-dom-view').then(m => m.SignalDomView)
-
     },
     {
         path:'amazone-dashboard',
