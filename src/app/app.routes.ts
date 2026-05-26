@@ -75,6 +75,10 @@ export const routes: Routes = [
     {
         path:'lifecycle/content',
         loadChildren:()=>import('./features/content-project/routers/router').then(r=>r.router)
+    },
+    {
+        path:'host/bl',
+        loadChildren:()=>import('./features/Host Binding-Litsner/routers/router').then(r=>r.router)
     }
 
 ];

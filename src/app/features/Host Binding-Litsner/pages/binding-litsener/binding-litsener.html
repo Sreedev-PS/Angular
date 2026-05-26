@@ -1,0 +1,23 @@
+<div style="background-color:antiquewhite; padding: 30px;margin:20px;border-radius:10px">
+    this is the color input. based on the value we change the background color of host.
+
+    <hr>
+    <input type="text" placeholder="Enter the color" [(ngModel)]="color">
+
+    <hr>
+
+    this is the BackGround Color of The Patch:-  <span style="text-transform: capitalize">{{color}}</span>
+</div>
+
+<div style="background-color:antiquewhite; padding: 30px;margin:20px;border-radius:10px">
+    This is the Host text color binding through host metadata.
+
+    <hr>
+    <input type="text" placeholder="Enter the color" [(ngModel)]="colorText">
+    <hr>
+
+    This is the Host text color :- <span style="text-transform: capitalize">{{colorText}}</span>
+</div>
+
+
+also added hover and click host listener for both section seperatedly. Please check the component logic file.
