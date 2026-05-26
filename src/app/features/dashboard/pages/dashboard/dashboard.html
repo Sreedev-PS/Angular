@@ -1,0 +1,30 @@
+<div class="dashboard-shell">
+  <section class="hero">
+    <div class="hero-copy">
+      <span class="eyebrow">Welcome</span>
+      <h1>Supercharged Angular Feature Dashboard</h1>
+      <p>
+        This is your default landing page. Explore every feature route with a single click,
+        and jump directly to the section you want.
+      </p>
+    </div>
+    <div class="hero-badge">
+      <span>All features in one place</span>
+    </div>
+  </section>
+
+  <section class="cards">
+    <a class="card" *ngFor="let feature of features" [routerLink]="feature.path">
+      <div class="card-top">
+        <div class="circle" [style.background]="feature.accent"></div>
+        <span class="title">{{ feature.title }}</span>
+      </div>
+      <p class="desc">{{ feature.description }}</p>
+      <span class="cta">Go to feature →</span>
+    </a>
+  </section>
+
+  <footer class="dashboard-footer">
+    <p>Click any tile to navigate to the corresponding feature section.</p>
+  </footer>
+</div>
