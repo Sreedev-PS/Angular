@@ -144,5 +144,11 @@ export class DashboardPage {
       description: 'Attach and display dynamic components',
       accent: '#18E5AD',
     },
+    {
+      title: 'NgRx State Management',
+      path: 'ngrx',
+      description: 'Counter actions, reducer, selector, and store binding demo',
+      accent: '#7C6FFF',
+    },
   ];
 }

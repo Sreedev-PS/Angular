@@ -94,6 +94,10 @@ export const routes: Routes = [
     {
         path:'dynamic-component',
         loadChildren:()=>import('./features/dynamic-components/routers/router').then(r=>r.Router)
+    },
+    {
+        path:'ngrx',
+        loadChildren:()=>import('./features/state-management-ngrx/routers/router').then(r=>r.router)
     }
 
 ];

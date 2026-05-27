@@ -1,0 +1,20 @@
+<div class="feature-desc" style="background:#f0f7ff;color:#07263a;padding:10px;border-radius:8px;margin:10px;">
+    <strong>Feature:</strong> NgRx State Management — Built a small counter feature using NgRx Store, actions, reducer, selector, and an async pipe to display live state.
+    <div style="margin-top:6px;font-size:0.9em;color:rgba(7,38,58,0.9);">What we did in this feature:</div>
+    <ul style="margin:6px 0 0 18px;padding-left:10px;font-size:0.95em;color:rgba(7,38,58,0.95);">
+        <li>Created increment and decrement actions for the counter.</li>
+        <li>Added a reducer to update the counter value in the store.</li>
+        <li>Used a selector and async pipe to bind the value in the UI.</li>
+    </ul>
+</div>
+
+<div style="background-color: antiquewhite;padding: 20px;margin: 10px;border-radius: 10px;">
+
+    <div style="background-color: white;padding: 15px;border-radius: 8px;box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+        <h3 style="color: #333;">Counter Value: {{ counterValue|async }}</h3>
+        <button (click)="incrementCounter()"
+            style="margin-right: 10px;padding: 8px 12px;background-color: #007bff;color: white;border: none;border-radius: 4px;cursor: pointer;">Increment</button>
+        <button (click)="decrementCounter()"
+            style="padding: 8px 12px;background-color: #dc3545;color: white;border: none;border-radius: 4px;cursor: pointer;">Decrement</button>
+    </div>
+</div>
