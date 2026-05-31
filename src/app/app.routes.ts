@@ -98,6 +98,10 @@ export const routes: Routes = [
     {
         path:'ngrx',
         loadChildren:()=>import('./features/state-management-ngrx/routers/router').then(r=>r.router)
+    },
+    {
+        path:'tests',
+        loadChildren:()=>import('./features/TestCase Feature/router/router').then(r=>r.testRouter)
     }
 
 ];

@@ -6,7 +6,7 @@ import { AsyncPipe, JsonPipe } from '@angular/common';
 
 @Component({
   selector: 'app-ngrx-component',
-  imports: [AsyncPipe, JsonPipe],
+  imports: [AsyncPipe],
   templateUrl: './ngrx-component.html',
   styleUrl: './ngrx-component.scss',
 })
