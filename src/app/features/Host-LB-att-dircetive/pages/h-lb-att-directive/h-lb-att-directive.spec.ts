@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HLbAttDirective } from './h-lb-att-directive';
+import { HLbAttDirectives } from './h-lb-att-directive';
 
-describe('HLbAttDirective', () => {
-  let component: HLbAttDirective;
-  let fixture: ComponentFixture<HLbAttDirective>;
+describe.only('HLbAttDirectives', () => {
+  let component: HLbAttDirectives;
+  let fixture: ComponentFixture<HLbAttDirectives>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HLbAttDirective]
+      imports: [HLbAttDirectives]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(HLbAttDirective);
+    fixture = TestBed.createComponent(HLbAttDirectives);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });
