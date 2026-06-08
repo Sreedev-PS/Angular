@@ -1,0 +1,13 @@
+ <div class="feature-desc" style="background:#fffaf0;color:#3b2a00;padding:10px;border-radius:8px;margin:10px;">
+    <strong>Feature:</strong> Virtual Scrolling<br>
+    <strong>Description:</strong> Virtual Scrolling is a technique used to efficiently render large lists of items by only rendering the items that are currently visible in the viewport. This can significantly improve performance when dealing with large datasets, as it reduces the number of DOM elements that need to be rendered and updated at any given time.<br>
+    <strong>Use Case:</strong> Virtual Scrolling is particularly useful in scenarios where you have a large list of items, such as a long list of products in an e-commerce application, a long list of messages in a chat application, or any other scenario where you need to display a large number of items without overwhelming the browser's rendering capabilities.<br>
+</div>
+
+<p>virtual-scroll works!</p>
+
+
+
+<cdk-virtual-scroll-viewport itemSize="50" class="viewport">
+  <div *cdkVirtualFor="let item of items" class="item">{{item}}</div>
+</cdk-virtual-scroll-viewport>

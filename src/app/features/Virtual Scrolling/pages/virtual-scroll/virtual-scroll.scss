@@ -1,0 +1,12 @@
+.viewport {
+  height: 500px;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+.item {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+}

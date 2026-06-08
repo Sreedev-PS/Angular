@@ -102,6 +102,10 @@ export const routes: Routes = [
     {
         path:'tests',
         loadChildren:()=>import('./features/TestCase Feature/router/router').then(r=>r.testRouter)
+    },
+    {
+        path:'virtual-scroll',
+        loadChildren:()=>import('./features/Virtual Scrolling/routers/router').then(r=>r.router)
     }
 
 ];
